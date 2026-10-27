@@ -1,0 +1,12 @@
+name: BTP Governance Gate
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  governance:
+    uses: SreenivasIngka/sap-btp-governance/.github/workflows/governance-reusable.yml@v1.0.0
+    with:
+      project-type: both
